@@ -62,10 +62,6 @@ int main(){
 	DP(0, 1);
 
 	ll ind = (1LL << N)-1;
-	// for(int i=0;i<N;i++) for(int j=0;j<=ind;j++){
-	// 	cout << memo[i][j] << " ";
-	// 	if(j == ind) cout << endl;
-	// }
 	for(int i=1;i<N;i++)
 		ans = min(ans, memo[i][ind] + dist[i][0]);
 
